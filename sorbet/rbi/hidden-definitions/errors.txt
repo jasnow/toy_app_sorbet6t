@@ -1694,79 +1694,23 @@
 # uninitialized constant ActiveRecord::ConnectionAdapters::AbstractAdapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::ConnectionAdapters::SQLite3Adapter::SIMPLE_INT
-# wrong constant name collect?
-# wrong constant name created_at
-# wrong constant name created_at=
-# wrong constant name created_at?
-# wrong constant name created_at_before_last_save
-# wrong constant name created_at_before_type_cast
-# wrong constant name created_at_came_from_user?
-# wrong constant name created_at_change
-# wrong constant name created_at_change_to_be_saved
-# wrong constant name created_at_changed?
-# wrong constant name created_at_in_database
-# wrong constant name created_at_previous_change
-# wrong constant name created_at_previously_changed?
-# wrong constant name created_at_was
-# wrong constant name created_at_will_change!
-# wrong constant name key
-# wrong constant name key=
-# wrong constant name key?
-# wrong constant name key_before_last_save
-# wrong constant name key_before_type_cast
-# wrong constant name key_came_from_user?
-# wrong constant name key_change
-# wrong constant name key_change_to_be_saved
-# wrong constant name key_changed?
-# wrong constant name key_in_database
-# wrong constant name key_previous_change
-# wrong constant name key_previously_changed?
-# wrong constant name key_was
-# wrong constant name key_will_change!
-# wrong constant name restore_created_at!
-# wrong constant name restore_key!
-# wrong constant name restore_updated_at!
-# wrong constant name restore_value!
-# wrong constant name saved_change_to_created_at
-# wrong constant name saved_change_to_created_at?
-# wrong constant name saved_change_to_key
-# wrong constant name saved_change_to_key?
-# wrong constant name saved_change_to_updated_at
-# wrong constant name saved_change_to_updated_at?
-# wrong constant name saved_change_to_value
-# wrong constant name saved_change_to_value?
-# wrong constant name updated_at
-# wrong constant name updated_at=
-# wrong constant name updated_at?
-# wrong constant name updated_at_before_last_save
-# wrong constant name updated_at_before_type_cast
-# wrong constant name updated_at_came_from_user?
-# wrong constant name updated_at_change
-# wrong constant name updated_at_change_to_be_saved
-# wrong constant name updated_at_changed?
-# wrong constant name updated_at_in_database
-# wrong constant name updated_at_previous_change
-# wrong constant name updated_at_previously_changed?
-# wrong constant name updated_at_was
-# wrong constant name updated_at_will_change!
-# wrong constant name value
-# wrong constant name value=
-# wrong constant name value?
-# wrong constant name value_before_last_save
-# wrong constant name value_before_type_cast
-# wrong constant name value_came_from_user?
-# wrong constant name value_change
-# wrong constant name value_change_to_be_saved
-# wrong constant name value_changed?
-# wrong constant name value_in_database
-# wrong constant name value_previous_change
-# wrong constant name value_previously_changed?
-# wrong constant name value_was
-# wrong constant name value_will_change!
-# wrong constant name will_save_change_to_created_at?
-# wrong constant name will_save_change_to_key?
-# wrong constant name will_save_change_to_updated_at?
-# wrong constant name will_save_change_to_value?
+# uninitialized constant ActiveRecord::InternalMetadata::ACTIONS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACKS
+# uninitialized constant ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
+# uninitialized constant ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedAssociationMethods>
+# wrong constant name <Class:GeneratedAttributeMethods>
+# uninitialized constant ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
+# uninitialized constant ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
+# uninitialized constant ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
+# uninitialized constant ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name []
+# wrong constant name []=
+# wrong constant name create_table
+# wrong constant name drop_table
 # wrong constant name <Class:Rails41>
 # wrong constant name <Class:Rails420>
 # wrong constant name <static-init>
@@ -1941,8 +1885,37 @@
 # uninitialized constant ActiveRecord::Relation::STRUCTURAL_OR_METHODS
 # uninitialized constant ActiveRecord::Relation::VALID_DIRECTIONS
 # uninitialized constant ActiveRecord::Relation::VALID_UNSCOPING_VALUES
-# wrong constant name value_for
-# wrong constant name suppressed
+# uninitialized constant ActiveRecord::Schema::MigrationFilenameRegexp
+# wrong constant name define
+# wrong constant name <Class:BindMap>
+# wrong constant name <Class:Params>
+# wrong constant name <Class:PartialQuery>
+# wrong constant name <Class:PartialQueryCollector>
+# wrong constant name <Class:Query>
+# wrong constant name <Class:Substitute>
+# wrong constant name execute
+# wrong constant name initialize
+# wrong constant name bind
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name bind
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name <static-init>
+# wrong constant name <<
+# wrong constant name add_bind
+# wrong constant name value
+# wrong constant name <static-init>
+# wrong constant name initialize
+# wrong constant name sql_for
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name <static-init>
+# wrong constant name create
+# wrong constant name partial_query
+# wrong constant name partial_query_collector
+# wrong constant name query
+# wrong constant name unsupported_value?
 # wrong constant name cache_dump_filename
 # wrong constant name charset
 # wrong constant name charset_current
