@@ -21,5 +21,7 @@ module ToyApp
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.generators.javascript_engine = :js
+
+    config.action_dispatch.return_only_media_type_on_content_type = false
   end
 end
