@@ -1,4 +1,4 @@
-# typed: false
+# typed: ignore
 class CreateMicroposts < ActiveRecord::Migration
   def change
     create_table :microposts do |t|
