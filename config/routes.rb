@@ -1,4 +1,4 @@
-# typed: ignore
+# typed: strict
 Rails.application.routes.draw do
   resources :microposts
 
