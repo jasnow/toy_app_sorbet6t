@@ -1699,13 +1699,10 @@
 # uninitialized constant ActiveRecord::InternalMetadata::CALLBACK_FILTER_TYPES
 # uninitialized constant ActiveRecord::InternalMetadata::CALL_COMPILABLE_REGEXP
 # wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
 # uninitialized constant ActiveRecord::InternalMetadata::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant ActiveRecord::InternalMetadata::NAME_COMPILABLE_REGEXP
 # uninitialized constant ActiveRecord::InternalMetadata::RESTRICTED_CLASS_METHODS
 # uninitialized constant ActiveRecord::InternalMetadata::UNASSIGNABLE_KEYS
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name []
 # wrong constant name []=
@@ -3346,6 +3343,7 @@
 # wrong constant name basename$1
 # wrong constant name chmod$1
 # wrong constant name chown$1
+# wrong constant name empty?
 # wrong constant name exists?
 # wrong constant name expand_path$1
 # wrong constant name fnmatch$1
@@ -3354,7 +3352,6 @@
 # wrong constant name lchown$1
 # wrong constant name lutime
 # wrong constant name mkfifo
-# wrong constant name probe_stat_in
 # wrong constant name realdirpath$1
 # wrong constant name realpath$1
 # wrong constant name umask$1
@@ -7394,8 +7391,6 @@
 # uninitialized constant Micropost::CALLBACKS
 # uninitialized constant Micropost::CALLBACK_FILTER_TYPES
 # uninitialized constant Micropost::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
 # uninitialized constant Micropost::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant Micropost::NAME_COMPILABLE_REGEXP
 # uninitialized constant Micropost::RESTRICTED_CLASS_METHODS
@@ -7405,11 +7400,6 @@
 # wrong constant name create_user
 # wrong constant name create_user!
 # wrong constant name reload_user
-# wrong constant name user
-# wrong constant name user=
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # uninitialized constant MicropostsController::ACTION_OPTIONS
 # uninitialized constant MicropostsController::AUTHENTICITY_TOKEN_LENGTH
 # uninitialized constant MicropostsController::CALLBACK_FILTER_TYPES
@@ -13403,8 +13393,6 @@
 # uninitialized constant User::CALLBACKS
 # uninitialized constant User::CALLBACK_FILTER_TYPES
 # uninitialized constant User::CALL_COMPILABLE_REGEXP
-# wrong constant name <Class:GeneratedAssociationMethods>
-# wrong constant name <Class:GeneratedAttributeMethods>
 # uninitialized constant User::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant User::NAME_COMPILABLE_REGEXP
 # uninitialized constant User::RESTRICTED_CLASS_METHODS
@@ -13425,11 +13413,6 @@
 # wrong constant name validate_associated_records_for_microposts
 # wrong constant name micropost_ids
 # wrong constant name micropost_ids=
-# wrong constant name microposts
-# wrong constant name microposts=
-# wrong constant name <static-init>
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # wrong constant name after_add_for_microposts
 # wrong constant name after_add_for_microposts=
 # wrong constant name after_add_for_microposts?
