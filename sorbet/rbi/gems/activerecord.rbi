@@ -7,7 +7,7 @@
 #
 #   https://github.com/sorbet/sorbet-typed/new/master?filename=lib/activerecord/all/activerecord.rbi
 #
-# activerecord-6.0.0.rc2
+# activerecord-6.0.0
 module Arel
   def self.arel_node?(value); end
   def self.fetch_attribute(value); end
@@ -2542,20 +2542,25 @@ class ActiveRecord::DatabaseConfigurations
   def blank?; end
   def build_configs(configs); end
   def build_db_config_from_hash(env_name, spec_name, config); end
+  def build_db_config_from_raw_config(env_name, spec_name, config); end
   def build_db_config_from_string(env_name, spec_name, config); end
-  def build_url_config(url, configs); end
   def configs_for(env_name: nil, spec_name: nil, include_replicas: nil); end
   def configurations; end
   def default_hash(env = nil); end
+  def each; end
   def empty?; end
   def env_with_configs(env = nil); end
+  def environment_url_config(env, spec_name, config); end
+  def environment_value_for(spec_name); end
   def find_db_config(env); end
+  def first; end
   def initialize(configurations = nil); end
+  def merge_db_environment_variables(current_env, configs); end
   def method_missing(method, *args, &blk); end
   def throw_getter_deprecation(method); end
   def throw_setter_deprecation(method); end
   def to_h; end
-  def walk_configs(env_name, spec_name, config); end
+  def walk_configs(env_name, config); end
 end
 class ActiveRecord::DatabaseConfigurations::DatabaseConfig
   def env_name; end
@@ -2582,6 +2587,8 @@ class ActiveRecord::DatabaseConfigurations::UrlConfig < ActiveRecord::DatabaseCo
   def replica?; end
   def url; end
   def url_config?; end
+end
+class ActiveRecord::DatabaseConfigurations::InvalidConfigurationError < StandardError
 end
 module ActiveRecord::ConnectionHandling
   def clear_active_connections!(*args, &block); end
@@ -2852,6 +2859,7 @@ module ActiveRecord::Enum
   def _enum_methods_module; end
   def assert_valid_enum_definition_values(values); end
   def detect_enum_conflict!(enum_name, method_name, klass_method = nil); end
+  def detect_negative_condition!(method_name); end
   def enum(definitions); end
   def inherited(base); end
   def raise_conflict_error(enum_name, method_name, type: nil, source: nil); end
@@ -3041,13 +3049,14 @@ class ActiveRecord::ConnectionAdapters::ConnectionHandler
   def owner_to_pool; end
   def pool_from_any_process_for(spec_name); end
   def prevent_writes; end
+  def prevent_writes=(prevent_writes); end
   def remove_connection(spec_name); end
   def retrieve_connection(spec_name); end
   def retrieve_connection_pool(spec_name); end
   def self.create_owner_to_pool; end
   def self.discard_unowned_pools(pid_map); end
   def self.unowned_pool_finalizer(pid_map); end
-  def while_preventing_writes; end
+  def while_preventing_writes(enabled = nil); end
 end
 class ActiveRecord::InsertAll
   def connection; end
@@ -5137,6 +5146,114 @@ class ActiveRecord::Associations::Builder::HasMany < ActiveRecord::Associations:
   def self.valid_dependent_options; end
   def self.valid_options(options); end
 end
+class ActiveRecord::Tasks::DatabaseAlreadyExists < StandardError
+end
+class ActiveRecord::Tasks::DatabaseNotSupported < StandardError
+end
+module ActiveRecord::Tasks::DatabaseTasks
+  def cache_dump_filename(namespace); end
+  def charset(*arguments); end
+  def charset_current(environment = nil, specification_name = nil); end
+  def check_protected_environments!; end
+  def check_schema_file(filename); end
+  def check_target_version; end
+  def class_for_adapter(adapter); end
+  def collation(*arguments); end
+  def collation_current(environment = nil, specification_name = nil); end
+  def create(*arguments); end
+  def create_all; end
+  def create_current(environment = nil, spec_name = nil); end
+  def current_config(options = nil); end
+  def current_config=(arg0); end
+  def database_configuration; end
+  def database_configuration=(arg0); end
+  def db_dir; end
+  def db_dir=(arg0); end
+  def drop(*arguments); end
+  def drop_all; end
+  def drop_current(environment = nil); end
+  def dump_filename(namespace, format = nil); end
+  def dump_schema(configuration, format = nil, spec_name = nil); end
+  def dump_schema_cache(conn, filename); end
+  def each_current_configuration(environment, spec_name = nil); end
+  def each_local_configuration; end
+  def env; end
+  def env=(arg0); end
+  def fixtures_path; end
+  def fixtures_path=(arg0); end
+  def for_each(databases); end
+  def load_schema(configuration, format = nil, file = nil, environment = nil, spec_name = nil); end
+  def load_schema_current(format = nil, file = nil, environment = nil); end
+  def load_seed; end
+  def local_database?(configuration); end
+  def migrate; end
+  def migrate_status; end
+  def migrations_paths; end
+  def migrations_paths=(arg0); end
+  def purge(configuration); end
+  def purge_all; end
+  def purge_current(environment = nil); end
+  def raise_for_multi_db(environment = nil, command:); end
+  def reconstruct_from_schema(configuration, format = nil, file = nil, environment = nil, spec_name = nil); end
+  def register_task(pattern, task); end
+  def root; end
+  def root=(arg0); end
+  def schema_file(format = nil); end
+  def schema_file_type(format = nil); end
+  def schema_sha1(file); end
+  def schema_up_to_date?(configuration, format = nil, file = nil, environment = nil, spec_name = nil); end
+  def seed_loader; end
+  def seed_loader=(arg0); end
+  def self.structure_dump_flags; end
+  def self.structure_dump_flags=(obj); end
+  def self.structure_load_flags; end
+  def self.structure_load_flags=(obj); end
+  def setup_initial_database_yaml; end
+  def spec; end
+  def structure_dump(*arguments); end
+  def structure_load(*arguments); end
+  def target_version; end
+  def truncate_all(environment = nil); end
+  def truncate_tables(configuration); end
+  def verbose?; end
+  extend ActiveRecord::Tasks::DatabaseTasks
+end
+module ActiveRecord::InternalMetadata::GeneratedAttributeMethods
+end
+class ActiveRecord::InternalMetadata < ActiveRecord::Base
+  def self.[](key); end
+  def self.[]=(key, value); end
+  def self._internal?; end
+  def self._validators; end
+  def self.attribute_type_decorations; end
+  def self.create_table; end
+  def self.defined_enums; end
+  def self.drop_table; end
+  def self.primary_key; end
+  def self.table_exists?; end
+  def self.table_name; end
+  include ActiveRecord::InternalMetadata::GeneratedAssociationMethods
+  include ActiveRecord::InternalMetadata::GeneratedAttributeMethods
+end
+module ActiveRecord::InternalMetadata::GeneratedAssociationMethods
+end
+class ActiveRecord::InternalMetadata::ActiveRecord_Relation < ActiveRecord::Relation
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::InternalMetadata::GeneratedRelationMethods
+end
+module ActiveRecord::InternalMetadata::GeneratedRelationMethods
+end
+class ActiveRecord::InternalMetadata::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::InternalMetadata::GeneratedRelationMethods
+end
+class ActiveRecord::InternalMetadata::ActiveRecord_AssociationRelation < ActiveRecord::AssociationRelation
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::InternalMetadata::GeneratedRelationMethods
+end
 class ActiveRecord::ConnectionAdapters::TransactionState
   def add_child(state); end
   def commit!; end
@@ -5238,44 +5355,6 @@ class ActiveRecord::Result
   def to_ary; end
   def to_hash; end
   include Enumerable
-end
-module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
-end
-class ActiveRecord::SchemaMigration < ActiveRecord::Base
-  def self._internal?; end
-  def self._validators; end
-  def self.all_versions; end
-  def self.attribute_type_decorations; end
-  def self.create_table; end
-  def self.defined_enums; end
-  def self.drop_table; end
-  def self.normalize_migration_number(number); end
-  def self.normalized_versions; end
-  def self.primary_key; end
-  def self.table_exists?; end
-  def self.table_name; end
-  def version; end
-  include ActiveRecord::SchemaMigration::GeneratedAssociationMethods
-  include ActiveRecord::SchemaMigration::GeneratedAttributeMethods
-end
-module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
-end
-class ActiveRecord::SchemaMigration::ActiveRecord_Relation < ActiveRecord::Relation
-  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
-  include ActiveRecord::Delegation::ClassSpecificRelation
-  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-module ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-class ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
-  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
-  include ActiveRecord::Delegation::ClassSpecificRelation
-  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
-end
-class ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation < ActiveRecord::AssociationRelation
-  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
-  include ActiveRecord::Delegation::ClassSpecificRelation
-  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
 end
 class ActiveRecord::PredicateBuilder
   def associated_predicate_builder(association_name); end
@@ -5393,9 +5472,81 @@ end
 class ActiveRecord::ConnectionAdapters::NullColumn < ActiveRecord::ConnectionAdapters::Column
   def initialize(name); end
 end
+class ActiveRecord::StatementCache
+  def bind_map; end
+  def execute(params, connection, &block); end
+  def initialize(query_builder, bind_map, klass); end
+  def klass; end
+  def query_builder; end
+  def self.create(connection, callable = nil, &block); end
+  def self.partial_query(values); end
+  def self.partial_query_collector; end
+  def self.query(sql); end
+  def self.unsupported_value?(value); end
+end
+class ActiveRecord::StatementCache::Substitute
+end
+class ActiveRecord::StatementCache::Query
+  def initialize(sql); end
+  def sql_for(binds, connection); end
+end
+class ActiveRecord::StatementCache::PartialQuery < ActiveRecord::StatementCache::Query
+  def initialize(values); end
+  def sql_for(binds, connection); end
+end
+class ActiveRecord::StatementCache::PartialQueryCollector
+  def <<(str); end
+  def add_bind(obj); end
+  def initialize; end
+  def value; end
+end
+class ActiveRecord::StatementCache::Params
+  def bind; end
+end
+class ActiveRecord::StatementCache::BindMap
+  def bind(values); end
+  def initialize(bound_attributes); end
+end
+module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
+end
+class ActiveRecord::SchemaMigration < ActiveRecord::Base
+  def self._internal?; end
+  def self._validators; end
+  def self.all_versions; end
+  def self.attribute_type_decorations; end
+  def self.create_table; end
+  def self.defined_enums; end
+  def self.drop_table; end
+  def self.normalize_migration_number(number); end
+  def self.normalized_versions; end
+  def self.primary_key; end
+  def self.table_exists?; end
+  def self.table_name; end
+  def version; end
+  include ActiveRecord::SchemaMigration::GeneratedAssociationMethods
+  include ActiveRecord::SchemaMigration::GeneratedAttributeMethods
+end
+module ActiveRecord::SchemaMigration::GeneratedAssociationMethods
+end
+class ActiveRecord::SchemaMigration::ActiveRecord_Relation < ActiveRecord::Relation
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
+end
+module ActiveRecord::SchemaMigration::GeneratedRelationMethods
+end
+class ActiveRecord::SchemaMigration::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
+end
+class ActiveRecord::SchemaMigration::ActiveRecord_AssociationRelation < ActiveRecord::AssociationRelation
+  extend ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+  include ActiveRecord::Delegation::ClassSpecificRelation
+  include ActiveRecord::SchemaMigration::GeneratedRelationMethods
+end
 module ActiveRecord::TestDatabases
   def self.create_and_load_schema(i, env_name:); end
-  def self.drop(env_name:); end
 end
 class ActiveRecord::FixtureSet
   def [](x); end
@@ -5416,7 +5567,7 @@ class ActiveRecord::FixtureSet
   def self.cache_for_connection(connection); end
   def self.cached_fixtures(connection, keys_to_fetch = nil); end
   def self.context_class; end
-  def self.create_fixtures(fixtures_directory, fixture_set_names, class_names = nil, config = nil); end
+  def self.create_fixtures(fixtures_directory, fixture_set_names, class_names = nil, config = nil, &block); end
   def self.default_fixture_model_name(fixture_set_name, config = nil); end
   def self.default_fixture_table_name(fixture_set_name, config = nil); end
   def self.fixture_is_cached?(connection, table_name); end
