@@ -3639,6 +3639,10 @@ module ActiveRecord::InternalMetadata::GeneratedAttributeMethods
   extend ::Mutex_m
 end
 
+module ActiveRecord::InternalMetadata::GeneratedRelationMethods
+  extend ::Mutex_m
+end
+
 module ActiveRecord::LegacyYamlAdapter
 end
 
@@ -4035,6 +4039,10 @@ class ActiveRecord::Schema
 end
 
 module ActiveRecord::SchemaMigration::GeneratedAttributeMethods
+  extend ::Mutex_m
+end
+
+module ActiveRecord::SchemaMigration::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -9797,6 +9805,33 @@ class Micropost
   def autosave_associated_records_for_user(*args); end
 end
 
+class Micropost::ActiveRecord_AssociationRelation
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::Micropost::GeneratedRelationMethods
+end
+
+class Micropost::ActiveRecord_AssociationRelation
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
+class Micropost::ActiveRecord_Associations_CollectionProxy
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::Micropost::GeneratedRelationMethods
+end
+
+class Micropost::ActiveRecord_Associations_CollectionProxy
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
+class Micropost::ActiveRecord_Relation
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::Micropost::GeneratedRelationMethods
+end
+
+class Micropost::ActiveRecord_Relation
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
 module Micropost::GeneratedAssociationMethods
   def build_user(*args, &block); end
 
@@ -9808,6 +9843,13 @@ module Micropost::GeneratedAssociationMethods
 end
 
 module Micropost::GeneratedAttributeMethods
+  extend ::Mutex_m
+end
+
+module Micropost::GeneratedRelationMethods
+end
+
+module Micropost::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
@@ -10701,10 +10743,6 @@ class Numeric
   def finite?(); end
 
   def infinite?(); end
-
-  def negative?(); end
-
-  def positive?(); end
 
   EXABYTE = ::T.let(nil, ::T.untyped)
   GIGABYTE = ::T.let(nil, ::T.untyped)
@@ -22279,6 +22317,33 @@ class User
   def validate_associated_records_for_microposts(*args); end
 end
 
+class User::ActiveRecord_AssociationRelation
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::User::GeneratedRelationMethods
+end
+
+class User::ActiveRecord_AssociationRelation
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
+class User::ActiveRecord_Associations_CollectionProxy
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::User::GeneratedRelationMethods
+end
+
+class User::ActiveRecord_Associations_CollectionProxy
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
+class User::ActiveRecord_Relation
+  include ::ActiveRecord::Delegation::ClassSpecificRelation
+  include ::User::GeneratedRelationMethods
+end
+
+class User::ActiveRecord_Relation
+  extend ::ActiveRecord::Delegation::ClassSpecificRelation::ClassMethods
+end
+
 module User::GeneratedAssociationMethods
   def micropost_ids(); end
 
@@ -22286,6 +22351,13 @@ module User::GeneratedAssociationMethods
 end
 
 module User::GeneratedAttributeMethods
+  extend ::Mutex_m
+end
+
+module User::GeneratedRelationMethods
+end
+
+module User::GeneratedRelationMethods
   extend ::Mutex_m
 end
 

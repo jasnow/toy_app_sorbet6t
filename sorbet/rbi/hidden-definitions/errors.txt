@@ -5500,15 +5500,56 @@
 # uninitialized constant Micropost::CALLBACKS
 # uninitialized constant Micropost::CALLBACK_FILTER_TYPES
 # uninitialized constant Micropost::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant Micropost::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant Micropost::NAME_COMPILABLE_REGEXP
 # uninitialized constant Micropost::RESTRICTED_CLASS_METHODS
 # uninitialized constant Micropost::UNASSIGNABLE_KEYS
 # wrong constant name autosave_associated_records_for_user
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of Micropost::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name build_user
 # wrong constant name create_user
 # wrong constant name create_user!
 # wrong constant name reload_user
+# wrong constant name <static-init>
 # uninitialized constant MicropostsController::ACTION_OPTIONS
 # uninitialized constant MicropostsController::AUTHENTICITY_TOKEN_LENGTH
 # uninitialized constant MicropostsController::CALLBACK_FILTER_TYPES
@@ -5946,8 +5987,6 @@
 # wrong constant name finite?
 # wrong constant name floor$2
 # wrong constant name infinite?
-# wrong constant name negative?
-# wrong constant name positive?
 # wrong constant name round$1
 # wrong constant name step$2
 # wrong constant name truncate$1
@@ -11427,6 +11466,7 @@
 # uninitialized constant User::CALLBACKS
 # uninitialized constant User::CALLBACK_FILTER_TYPES
 # uninitialized constant User::CALL_COMPILABLE_REGEXP
+# wrong constant name <Class:GeneratedRelationMethods>
 # uninitialized constant User::MAX_PASSWORD_LENGTH_ALLOWED
 # uninitialized constant User::NAME_COMPILABLE_REGEXP
 # uninitialized constant User::RESTRICTED_CLASS_METHODS
@@ -11445,8 +11485,48 @@
 # wrong constant name before_remove_for_microposts=
 # wrong constant name before_remove_for_microposts?
 # wrong constant name validate_associated_records_for_microposts
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_AssociationRelation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Associations_CollectionProxy has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
+# A copy of User::ActiveRecord_Relation has been removed from the module tree but is still active!
 # wrong constant name micropost_ids
 # wrong constant name micropost_ids=
+# wrong constant name <static-init>
 # wrong constant name after_add_for_microposts
 # wrong constant name after_add_for_microposts=
 # wrong constant name after_add_for_microposts?
