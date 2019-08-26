@@ -63,7 +63,6 @@ GEM
       rake (< 13.0)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
-    dalli (2.7.10)
     erubi (1.8.0)
     execjs (2.7.0)
     ffi (1.11.1)
@@ -141,7 +140,6 @@ GEM
     rainbow (3.0.0)
     rake (12.3.3)
     rdoc (6.1.1)
-    redis (4.1.2)
     sassc (2.1.0)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -192,7 +190,6 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  dalli
   jbuilder
   jquery-rails
   overcommit
@@ -201,7 +198,6 @@ DEPENDENCIES
   rails-controller-testing
   rails-html-sanitizer
   rails_12factor
-  redis
   sassc-rails
   sdoc
   sorbet
