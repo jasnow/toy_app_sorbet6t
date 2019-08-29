@@ -3899,17 +3899,12 @@ class ActiveRecord::Migration::Compatibility::V5_1
   def create_table(table_name, options=T.unsafe(nil)); end
 end
 
-class ActiveRecord::Migration::Compatibility::V5_1
-end
-
 class ActiveRecord::Migration::Compatibility::V5_2
   def add_timestamps(table_name, **options); end
 
   def change_table(table_name, **options); end
 
   def create_join_table(table_1, table_2, **options); end
-
-  def create_table(table_name, **options); end
 end
 
 module ActiveRecord::Migration::Compatibility::V5_2::CommandRecorder
@@ -3928,9 +3923,6 @@ module ActiveRecord::Migration::Compatibility::V5_2::TableDefinition
 end
 
 module ActiveRecord::Migration::Compatibility::V5_2::TableDefinition
-end
-
-class ActiveRecord::Migration::Compatibility::V5_2
 end
 
 module ActiveRecord::Migration::Compatibility
@@ -7586,7 +7578,7 @@ class Hash
 end
 
 class Hash
-  def self.try_convert(_); end
+  def self.from_trusted_xml(xml); end
 end
 
 HashWithIndifferentAccess = ActiveSupport::HashWithIndifferentAccess
@@ -9875,6 +9867,8 @@ module MonitorMixin
   def synchronize(); end
 
   def try_mon_enter(); end
+  EXCEPTION_IMMEDIATE = ::T.let(nil, ::T.untyped)
+  EXCEPTION_NEVER = ::T.let(nil, ::T.untyped)
 end
 
 class MonitorMixin::ConditionVariable
@@ -13905,7 +13899,7 @@ class RDoc::Comment
 
   def format=(format); end
 
-  def initialize(text=T.unsafe(nil), location=T.unsafe(nil)); end
+  def initialize(text=T.unsafe(nil), location=T.unsafe(nil), language=T.unsafe(nil)); end
 
   def location(); end
 
@@ -14890,29 +14884,15 @@ class RDoc::Parser::C
 
   def do_boot_defclass(); end
 
-  def do_classes(); end
+  def do_classes_and_modules(); end
 
   def do_constants(); end
-
-  def do_define_class(); end
-
-  def do_define_class_under(); end
-
-  def do_define_module(); end
-
-  def do_define_module_under(); end
 
   def do_includes(); end
 
   def do_methods(); end
 
   def do_missing(); end
-
-  def do_modules(); end
-
-  def do_singleton_class(); end
-
-  def do_struct_define_without_accessor(); end
 
   def enclosure_dependencies(); end
 
@@ -16240,9 +16220,9 @@ module RDoc::Text
 end
 
 module RDoc::TokenStream
-  def add_token(*tokens); end
+  def add_token(token); end
 
-  def add_tokens(*tokens); end
+  def add_tokens(tokens); end
 
   def collect_tokens(); end
 

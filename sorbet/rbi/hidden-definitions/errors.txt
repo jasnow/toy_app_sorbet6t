@@ -555,6 +555,8 @@
 # uninitialized constant ActionDispatch::Request::RESCUABLE_MIME_FORMAT_ERRORS
 # uninitialized constant ActionDispatch::Response::DATE
 # uninitialized constant ActionDispatch::Response::DEFAULT_CACHE_CONTROL
+# uninitialized constant ActionDispatch::Response::EXCEPTION_IMMEDIATE
+# uninitialized constant ActionDispatch::Response::EXCEPTION_NEVER
 # uninitialized constant ActionDispatch::Response::FILTERED
 # uninitialized constant ActionDispatch::Response::LAST_MODIFIED
 # uninitialized constant ActionDispatch::Response::MUST_REVALIDATE
@@ -640,6 +642,8 @@
 # uninitialized constant ActionDispatch::TestResponse::CONTENT_TYPE_PARSER
 # uninitialized constant ActionDispatch::TestResponse::DATE
 # uninitialized constant ActionDispatch::TestResponse::DEFAULT_CACHE_CONTROL
+# uninitialized constant ActionDispatch::TestResponse::EXCEPTION_IMMEDIATE
+# uninitialized constant ActionDispatch::TestResponse::EXCEPTION_NEVER
 # uninitialized constant ActionDispatch::TestResponse::FILTERED
 # uninitialized constant ActionDispatch::TestResponse::LAST_MODIFIED
 # uninitialized constant ActionDispatch::TestResponse::LOCATION
@@ -1821,20 +1825,17 @@
 # uninitialized constant ActiveRecord::Migration::Compatibility::V5_1::MigrationFilenameRegexp
 # wrong constant name change_column
 # wrong constant name create_table
-# wrong constant name <static-init>
 # wrong constant name <Class:CommandRecorder>
 # uninitialized constant ActiveRecord::Migration::Compatibility::V5_2::MigrationFilenameRegexp
 # wrong constant name <Class:TableDefinition>
 # wrong constant name add_timestamps
 # wrong constant name change_table
 # wrong constant name create_join_table
-# wrong constant name create_table
 # wrong constant name invert_change_column_comment
 # wrong constant name invert_change_table_comment
 # wrong constant name invert_transaction
 # wrong constant name <static-init>
 # wrong constant name timestamps
-# wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name <static-init>
 # wrong constant name find
@@ -3351,7 +3352,7 @@
 # wrong constant name transform_values
 # wrong constant name transform_values!
 # wrong constant name update
-# wrong constant name try_convert
+# wrong constant name from_trusted_xml
 # wrong constant name <Class:Gettext>
 # wrong constant name <Class:Locale>
 # wrong constant name <Class:Middleware>
@@ -4063,6 +4064,8 @@
 # wrong constant name path
 # wrong constant name exit_value
 # wrong constant name reason
+# uninitialized constant Logger::LogDevice::EXCEPTION_IMMEDIATE
+# uninitialized constant Logger::LogDevice::EXCEPTION_NEVER
 # uninitialized constant Logger::LogDevice::SiD
 # wrong constant name <Class:AddressList>
 # wrong constant name <Class:CheckDeliveryParams>
@@ -5606,6 +5609,8 @@
 # wrong constant name remove_method$1
 # wrong constant name undef_method
 # wrong constant name used_modules
+# uninitialized constant Monitor::EXCEPTION_IMMEDIATE
+# uninitialized constant Monitor::EXCEPTION_NEVER
 # wrong constant name enter
 # wrong constant name exit
 # wrong constant name try_enter
@@ -5713,6 +5718,8 @@
 # wrong constant name <static-init>
 # undefined method `fetch$1' for class `Net::IMAP'
 # undefined method `uid_fetch$1' for class `Net::IMAP'
+# uninitialized constant Net::IMAP::EXCEPTION_IMMEDIATE
+# uninitialized constant Net::IMAP::EXCEPTION_NEVER
 # uninitialized constant Net::IMAP::OPENSSL_FIPS
 # uninitialized constant Net::IMAP::OPENSSL_LIBRARY_VERSION
 # uninitialized constant Net::IMAP::OPENSSL_VERSION
@@ -8261,18 +8268,11 @@
 # wrong constant name do_aliases
 # wrong constant name do_attrs
 # wrong constant name do_boot_defclass
-# wrong constant name do_classes
+# wrong constant name do_classes_and_modules
 # wrong constant name do_constants
-# wrong constant name do_define_class
-# wrong constant name do_define_class_under
-# wrong constant name do_define_module
-# wrong constant name do_define_module_under
 # wrong constant name do_includes
 # wrong constant name do_methods
 # wrong constant name do_missing
-# wrong constant name do_modules
-# wrong constant name do_singleton_class
-# wrong constant name do_struct_define_without_accessor
 # wrong constant name enclosure_dependencies
 # wrong constant name find_alias_comment
 # wrong constant name find_attr_comment
