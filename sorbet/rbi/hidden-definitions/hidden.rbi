@@ -20235,6 +20235,10 @@ end
 
 SorbetRails::ModelPlugins::Base::Parameter = Parlour::RbiGenerator::Parameter
 
+module SorbetRails
+  extend ::T::Private::Methods::SingletonMethodHooks
+end
+
 class SortedSet
   def initialize(*args, &block); end
 end
