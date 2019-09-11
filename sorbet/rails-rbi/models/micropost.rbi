@@ -59,10 +59,10 @@ end
 module Micropost::GeneratedAssociationMethods
   extend T::Sig
 
-  sig { returns(T.nilable(::User)) }
+  sig { returns(::User) }
   def user; end
 
-  sig { params(value: T.nilable(::User)).void }
+  sig { params(value: ::User).void }
   def user=(value); end
 end
 
