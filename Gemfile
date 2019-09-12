@@ -11,10 +11,6 @@ gem 'rails-html-sanitizer'
 gem 'sdoc', group: :doc
 gem 'overcommit'
 
-gem 'sorbet'
-gem 'sorbet-runtime'
-gem 'sorbet-rails'
-
 group :development do
   gem 'web-console'
 end
@@ -30,3 +26,9 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
+gem 'sorbet'
+gem 'sorbet-runtime'
+gem 'sorbet-rails'
+gem 'dalli' # Needed by sorbet.
+gem 'redis' # Needed by sorbet.
