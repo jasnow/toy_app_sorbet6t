@@ -2123,21 +2123,6 @@
 # uninitialized constant ActiveSupport::TestCase::UNDEFINED
 # uninitialized constant ActiveSupport::TestCase::UNTRACKED
 # wrong constant name connect_internal
-# uninitialized constant ApplicationController::ACTION_OPTIONS
-# uninitialized constant ApplicationController::AUTHENTICITY_TOKEN_LENGTH
-# uninitialized constant ApplicationController::CALLBACK_FILTER_TYPES
-# uninitialized constant ApplicationController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_DISPOSITION
-# uninitialized constant ApplicationController::DEFAULT_SEND_FILE_TYPE
-# uninitialized constant ApplicationController::EXCLUDE_PARAMETERS
-# uninitialized constant ApplicationController::MODULES
-# uninitialized constant ApplicationController::NULL_ORIGIN_MESSAGE
-# uninitialized constant ApplicationController::PROTECTED_IVARS
-# uninitialized constant ApplicationController::REDIRECT_OPTIONS
-# uninitialized constant ApplicationController::RENDERERS
-# uninitialized constant ApplicationController::RENDER_FORMATS_IN_PRIORITY
-# uninitialized constant ApplicationController::URL_OPTIONS
-# wrong constant name <static-init>
 # undefined method `[]$2' for class `Array'
 # undefined method `[]=$2' for class `Array'
 # undefined method `concat$1' for class `Array'
@@ -3212,6 +3197,7 @@
 # wrong constant name basename$1
 # wrong constant name chmod$1
 # wrong constant name chown$1
+# wrong constant name empty?
 # wrong constant name exists?
 # wrong constant name expand_path$1
 # wrong constant name fnmatch$1
@@ -3220,7 +3206,6 @@
 # wrong constant name lchown$1
 # wrong constant name lutime
 # wrong constant name mkfifo
-# wrong constant name probe_stat_in
 # wrong constant name realdirpath$1
 # wrong constant name realpath$1
 # wrong constant name umask$1
@@ -5520,28 +5505,6 @@
 # wrong constant name create_user
 # wrong constant name create_user!
 # wrong constant name reload_user
-# wrong constant name <static-init>
-# uninitialized constant MicropostsController::ACTION_OPTIONS
-# uninitialized constant MicropostsController::AUTHENTICITY_TOKEN_LENGTH
-# uninitialized constant MicropostsController::CALLBACK_FILTER_TYPES
-# uninitialized constant MicropostsController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# uninitialized constant MicropostsController::DEFAULT_SEND_FILE_DISPOSITION
-# uninitialized constant MicropostsController::DEFAULT_SEND_FILE_TYPE
-# uninitialized constant MicropostsController::EXCLUDE_PARAMETERS
-# uninitialized constant MicropostsController::MODULES
-# uninitialized constant MicropostsController::NULL_ORIGIN_MESSAGE
-# uninitialized constant MicropostsController::PROTECTED_IVARS
-# uninitialized constant MicropostsController::REDIRECT_OPTIONS
-# uninitialized constant MicropostsController::RENDERERS
-# uninitialized constant MicropostsController::RENDER_FORMATS_IN_PRIORITY
-# uninitialized constant MicropostsController::URL_OPTIONS
-# wrong constant name create
-# wrong constant name destroy
-# wrong constant name edit
-# wrong constant name index
-# wrong constant name new
-# wrong constant name show
-# wrong constant name update
 # wrong constant name <static-init>
 # uninitialized constant Minitest::Test::E
 # uninitialized constant Minitest::Test::SIGNALS
@@ -10830,10 +10793,6 @@
 # wrong constant name count$1
 # wrong constant name delete$1
 # wrong constant name delete!$1
-# wrong constant name delete_prefix
-# wrong constant name delete_prefix!
-# wrong constant name delete_suffix
-# wrong constant name delete_suffix!
 # wrong constant name downcase$1
 # wrong constant name downcase!$1
 # wrong constant name each_grapheme_cluster
@@ -11246,11 +11205,6 @@
 # wrong constant name localtime$1
 # wrong constant name round$1
 # wrong constant name to_s$1
-# wrong constant name <Class:Application>
-# uninitialized constant ToyApp::Application::ABSTRACT_RAILTIES
-# uninitialized constant ToyApp::Application::INITIAL_VARIABLES
-# wrong constant name <static-init>
-# wrong constant name <static-init>
 # undefined method `enable$2' for class `TracePoint'
 # wrong constant name __enable
 # wrong constant name enable$2
@@ -11450,28 +11404,6 @@
 # wrong constant name before_remove_for_microposts
 # wrong constant name before_remove_for_microposts=
 # wrong constant name before_remove_for_microposts?
-# uninitialized constant UsersController::ACTION_OPTIONS
-# uninitialized constant UsersController::AUTHENTICITY_TOKEN_LENGTH
-# uninitialized constant UsersController::CALLBACK_FILTER_TYPES
-# uninitialized constant UsersController::DEFAULT_PROTECTED_INSTANCE_VARIABLES
-# uninitialized constant UsersController::DEFAULT_SEND_FILE_DISPOSITION
-# uninitialized constant UsersController::DEFAULT_SEND_FILE_TYPE
-# uninitialized constant UsersController::EXCLUDE_PARAMETERS
-# uninitialized constant UsersController::MODULES
-# uninitialized constant UsersController::NULL_ORIGIN_MESSAGE
-# uninitialized constant UsersController::PROTECTED_IVARS
-# uninitialized constant UsersController::REDIRECT_OPTIONS
-# uninitialized constant UsersController::RENDERERS
-# uninitialized constant UsersController::RENDER_FORMATS_IN_PRIORITY
-# uninitialized constant UsersController::URL_OPTIONS
-# wrong constant name create
-# wrong constant name destroy
-# wrong constant name edit
-# wrong constant name index
-# wrong constant name new
-# wrong constant name show
-# wrong constant name update
-# wrong constant name <static-init>
 # wrong constant name warn
 # wrong constant name <Class:RefError>
 # wrong constant name initialize

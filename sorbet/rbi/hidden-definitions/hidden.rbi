@@ -4824,12 +4824,6 @@ class Addrinfo
   def connect_internal(local_addrinfo, timeout=T.unsafe(nil)); end
 end
 
-class ApplicationController
-end
-
-class ApplicationController
-end
-
 module Arel
   VERSION = ::T.let(nil, ::T.untyped)
 end
@@ -7264,13 +7258,13 @@ class File::Stat
 end
 
 class File
+  def self.empty?(_); end
+
   def self.exists?(_); end
 
   def self.lutime(*_); end
 
   def self.mkfifo(*_); end
-
-  def self.probe_stat_in(dir); end
 
 end
 
@@ -9762,25 +9756,6 @@ module Micropost::GeneratedRelationMethods
   extend ::Mutex_m
 end
 
-class MicropostsController
-  def create(); end
-
-  def destroy(); end
-
-  def edit(); end
-
-  def index(); end
-
-  def new(); end
-
-  def show(); end
-
-  def update(); end
-end
-
-class MicropostsController
-end
-
 module Mime
   ALL = ::T.let(nil, ::T.untyped)
   EXTENSION_LOOKUP = ::T.let(nil, ::T.untyped)
@@ -9812,7 +9787,21 @@ class MiniMime::Info
   BINARY_ENCODINGS = ::T.let(nil, ::T.untyped)
 end
 
-MiniTest = Minitest
+module Minitest
+end
+
+MiniTest::Assertions = Minitest::Assertions
+
+MiniTest::Guard = Minitest::Guard
+
+MiniTest::Reportable = Minitest::Reportable
+
+MiniTest::Runnable = Minitest::Runnable
+
+MiniTest::Test = Minitest::Test
+
+module Minitest
+end
 
 module Minitest
   ENCS = ::T.let(nil, ::T.untyped)
@@ -9952,8 +9941,6 @@ class Net::HTTP
   ENVIRONMENT_VARIABLE_IS_MULTIUSER_SAFE = ::T.let(nil, ::T.untyped)
 end
 
-Net::HTTP::ProxyMod = Net::HTTP::ProxyDelta
-
 class Net::HTTPAlreadyReported
   HAS_BODY = ::T.let(nil, ::T.untyped)
 end
@@ -9961,9 +9948,13 @@ end
 class Net::HTTPAlreadyReported
 end
 
-Net::HTTPClientError::EXCEPTION_TYPE = Net::HTTPServerException
+class Net::HTTPClientError
+end
 
-Net::HTTPClientErrorCode = Net::HTTPClientError
+Net::HTTPClientErrorCode::EXCEPTION_TYPE = Net::HTTPServerException
+
+class Net::HTTPClientError
+end
 
 Net::HTTPClientException = Net::HTTPServerException
 
@@ -9991,9 +9982,13 @@ class Net::HTTPGenericRequest::Chunker
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
 end
 
-Net::HTTPInformation::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTPInformation
+end
 
-Net::HTTPInformationCode = Net::HTTPInformation
+Net::HTTPInformationCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPInformation
+end
 
 class Net::HTTPLoopDetected
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -10041,9 +10036,13 @@ end
 class Net::HTTPRangeNotSatisfiable
 end
 
-Net::HTTPRedirection::EXCEPTION_TYPE = Net::HTTPRetriableError
+class Net::HTTPRedirection
+end
 
-Net::HTTPRedirectionCode = Net::HTTPRedirection
+Net::HTTPRedirectionCode::EXCEPTION_TYPE = Net::HTTPRetriableError
+
+class Net::HTTPRedirection
+end
 
 class Net::HTTPRequestTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -10066,15 +10065,31 @@ end
 
 Net::HTTPRetriableCode = Net::HTTPRedirection
 
-Net::HTTPServerError::EXCEPTION_TYPE = Net::HTTPFatalError
+class Net::HTTPServerError
+end
 
-Net::HTTPServerErrorCode = Net::HTTPServerError
+Net::HTTPServerErrorCode::EXCEPTION_TYPE = Net::HTTPFatalError
 
-Net::HTTPSession = Net::HTTP
+class Net::HTTPServerError
+end
 
-Net::HTTPSuccess::EXCEPTION_TYPE = Net::HTTPError
+class Net::HTTP
+end
 
-Net::HTTPSuccessCode = Net::HTTPSuccess
+Net::HTTPSession::ProxyDelta = Net::HTTP::ProxyDelta
+
+Net::HTTPSession::ProxyMod = Net::HTTP::ProxyDelta
+
+class Net::HTTP
+end
+
+class Net::HTTPSuccess
+end
+
+Net::HTTPSuccessCode::EXCEPTION_TYPE = Net::HTTPError
+
+class Net::HTTPSuccess
+end
 
 class Net::HTTPURITooLong
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -20968,14 +20983,6 @@ class String
 
   def casecmp?(_); end
 
-  def delete_prefix(_); end
-
-  def delete_prefix!(_); end
-
-  def delete_suffix(_); end
-
-  def delete_suffix!(_); end
-
   def each_grapheme_cluster(); end
 
   def encode(*_); end
@@ -21817,18 +21824,6 @@ class Time
   DATE_FORMATS = ::T.let(nil, ::T.untyped)
 end
 
-module ToyApp
-end
-
-class ToyApp::Application
-end
-
-class ToyApp::Application
-end
-
-module ToyApp
-end
-
 class TracePoint
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
   def __enable(_, _1); end
@@ -22153,25 +22148,6 @@ class User
   def self.before_remove_for_microposts=(val); end
 
   def self.before_remove_for_microposts?(); end
-end
-
-class UsersController
-  def create(); end
-
-  def destroy(); end
-
-  def edit(); end
-
-  def index(); end
-
-  def new(); end
-
-  def show(); end
-
-  def update(); end
-end
-
-class UsersController
 end
 
 Visitor = Psych::Visitors::Visitor
