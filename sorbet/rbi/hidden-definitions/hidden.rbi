@@ -7646,10 +7646,7 @@ class Net::HTTPRangeNotSatisfiable
   HAS_BODY = ::T.let(nil, ::T.untyped)
 end
 
-class Net::HTTPRedirection
-end
-
-Net::HTTPRedirectionCode::EXCEPTION_TYPE = Net::HTTPRetriableError
+Net::HTTPRedirectionCode = Net::HTTPRedirection
 
 class Net::HTTPRequestTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -7667,7 +7664,10 @@ class Net::HTTPResponse::Inflater
   include ::ActiveSupport::ToJsonWithActiveSupportEncoder
 end
 
-Net::HTTPRetriableCode = Net::HTTPRedirection
+class Net::HTTPRedirection
+end
+
+Net::HTTPRetriableCode::EXCEPTION_TYPE = Net::HTTPRetriableError
 
 class Net::HTTPServerError
 end
