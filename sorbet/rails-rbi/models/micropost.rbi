@@ -19,10 +19,10 @@ module Micropost::GeneratedAttributeMethods
   sig { returns(T::Boolean) }
   def content?; end
 
-  sig { returns(DateTime) }
+  sig { returns(ActiveSupport::TimeWithZone) }
   def created_at; end
 
-  sig { params(value: DateTime).void }
+  sig { params(value: T.any(DateTime, Date, Time, ActiveSupport::TimeWithZone)).void }
   def created_at=(value); end
 
   sig { returns(T::Boolean) }
@@ -37,10 +37,10 @@ module Micropost::GeneratedAttributeMethods
   sig { returns(T::Boolean) }
   def id?; end
 
-  sig { returns(DateTime) }
+  sig { returns(ActiveSupport::TimeWithZone) }
   def updated_at; end
 
-  sig { params(value: DateTime).void }
+  sig { params(value: T.any(DateTime, Date, Time, ActiveSupport::TimeWithZone)).void }
   def updated_at=(value); end
 
   sig { returns(T::Boolean) }
@@ -248,6 +248,15 @@ class Micropost < ActiveRecord::Base
 
   sig { params(args: T.untyped).returns(T::Boolean) }
   def self.one?(*args); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(Micropost) }
+  def self.create(attributes = nil, &block); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(Micropost) }
+  def self.create!(attributes = nil, &block); end
+
+  sig { params(attributes: T.untyped, block: T.untyped).returns(Micropost) }
+  def self.new(attributes = nil, &block); end
 end
 
 class Micropost::ActiveRecord_Relation < ActiveRecord::Relation
@@ -417,7 +426,7 @@ class Micropost::ActiveRecord_Relation < ActiveRecord::Relation
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: Micropost).void).void }
+  sig { override.params(block: T.proc.params(e: Micropost).void).returns(T::Array[Micropost]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[Micropost]) }
@@ -602,7 +611,7 @@ class Micropost::ActiveRecord_AssociationRelation < ActiveRecord::AssociationRel
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: Micropost).void).void }
+  sig { override.params(block: T.proc.params(e: Micropost).void).returns(T::Array[Micropost]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[Micropost]) }
@@ -786,7 +795,7 @@ class Micropost::ActiveRecord_Associations_CollectionProxy < ActiveRecord::Assoc
   sig { params(args: T.untyped).returns(T::Boolean) }
   def one?(*args); end
 
-  sig { override.params(block: T.proc.params(e: Micropost).void).void }
+  sig { override.params(block: T.proc.params(e: Micropost).void).returns(T::Array[Micropost]) }
   def each(&block); end
 
   sig { params(level: T.nilable(Integer)).returns(T::Array[Micropost]) }

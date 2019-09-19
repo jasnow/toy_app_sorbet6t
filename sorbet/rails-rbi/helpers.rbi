@@ -15,3 +15,8 @@ module UsersHelper
   include Kernel
   include ActionView::Helpers
 end
+
+module ActionController::Helpers
+  sig { returns(T.all(ApplicationHelper, MicropostsHelper, UsersHelper)) }
+  def helpers; end
+end
