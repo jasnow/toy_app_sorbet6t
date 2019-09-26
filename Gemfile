@@ -27,8 +27,4 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem 'sorbet'
-gem 'sorbet-runtime'
-gem 'sorbet-rails'
-gem 'dalli' # Needed by sorbet.
-gem 'redis' # Needed by sorbet.
+gem 'tapioca', require: false, group: :development
