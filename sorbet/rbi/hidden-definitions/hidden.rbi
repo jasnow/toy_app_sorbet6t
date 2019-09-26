@@ -1586,9 +1586,6 @@ class ActionView::AbstractRenderer::RenderedTemplate
   EMPTY_SPACER = ::T.let(nil, ::T.untyped)
 end
 
-class ActionView::ActionViewError
-end
-
 class ActionView::Base
   include ::ActionView::Context
   include ::ERB::Util
@@ -1703,9 +1700,6 @@ end
 class ActionView::Digestor::Partial
 end
 
-class ActionView::EncodingError
-end
-
 module ActionView::Helpers::AssetUrlHelper
   ASSET_EXTENSIONS = ::T.let(nil, ::T.untyped)
   ASSET_PUBLIC_DIRECTORIES = ::T.let(nil, ::T.untyped)
@@ -1753,8 +1747,6 @@ end
 
 class ActionView::MissingTemplate
   def initialize(paths, path, prefixes, partial, details, *_); end
-
-  def path(); end
 end
 
 class ActionView::OutputBuffer
@@ -1953,8 +1945,6 @@ end
 class ActionView::Template::Types::Type
   SET = ::T.let(nil, ::T.untyped)
 end
-
-ActionView::TemplateError = ActionView::Template::Error
 
 class ActionView::TemplateRenderer
   def render(context, options); end
@@ -7518,7 +7508,10 @@ class Net::HTTPRangeNotSatisfiable
   HAS_BODY = ::T.let(nil, ::T.untyped)
 end
 
-Net::HTTPRedirectionCode = Net::HTTPRedirection
+class Net::HTTPRedirection
+end
+
+Net::HTTPRedirectionCode::EXCEPTION_TYPE = Net::HTTPRetriableError
 
 class Net::HTTPRequestTimeout
   HAS_BODY = ::T.let(nil, ::T.untyped)
@@ -7528,15 +7521,9 @@ Net::HTTPRequestURITooLarge = Net::HTTPURITooLong
 
 Net::HTTPResponceReceiver = Net::HTTPResponse
 
-class Net::HTTPRedirection
-end
+Net::HTTPRetriableCode = Net::HTTPRedirection
 
-Net::HTTPRetriableCode::EXCEPTION_TYPE = Net::HTTPRetriableError
-
-class Net::HTTPServerError
-end
-
-Net::HTTPServerErrorCode::EXCEPTION_TYPE = Net::HTTPFatalError
+Net::HTTPServerErrorCode = Net::HTTPServerError
 
 class Net::HTTP
 end
