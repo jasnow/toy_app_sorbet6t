@@ -28,3 +28,4 @@ group :production do
 end
 
 gem 'tapioca', require: false, group: :development
+gem 'dalli' # Required by tapica.
